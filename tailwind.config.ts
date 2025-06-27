@@ -8,7 +8,11 @@ export default {
     './nuxt.config.ts'
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        barbra: ['"Barbra"', 'DM Sans', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }
