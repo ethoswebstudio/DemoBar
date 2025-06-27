@@ -89,6 +89,9 @@
     <div 
     id="Bistro"
     class="text-black bg-amber-50 flex flex-col lg:flex-row padding-px padding-py relative gap-12">
+        <div class="relative flex-1 max-w-md mx-auto lg:mx-0">
+            <Carousel />
+        </div>
         <div class="relative flex-1 flex flex-col justify-center gap-4">
             <h2 class="text-title">
             Il Bistrò
@@ -97,9 +100,6 @@
             Piatti che trasmettono l'autenticità e la passione del nostro Bistrò. <br>
             Il cibo è il nostro amore e ogni giorno vogliamo accompagnarti in un viaggio culinario con un menù di stagione che varia utilizzando materie prime fresche e salutari.
             </p>
-        </div>
-        <div class="relative flex-1 max-w-md mx-auto lg:mx-0">
-            <Carousel />
         </div>
     </div>
    

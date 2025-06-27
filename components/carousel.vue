@@ -1,13 +1,13 @@
 <script setup lang="ts">
 const items = [
 '/img/carousel/BarImg.png',
+'/img/carousel/BarImg.png',
 ]
 </script>
 
 <template>
   <UCarousel
     v-slot="{ item }"
-    class-names
     arrows
     :items="items"
     :ui="{
