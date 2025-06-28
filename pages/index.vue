@@ -7,18 +7,23 @@
     <section
       id="Landing"
       class="relative isolate flex flex-col lg:flex-row items-center justify-center padding-px padding-py
-             bg-[url('/img/home/landingDsk.png')] bg-cover bg-center"
+        bg-[url('/img/home/landingMob.png')]
+        xl:bg-[url('/img/home/landingDsk.png')] 
+        bg-no-repeat bg-cover bg-center"
     >
       <div class="text-center space-y-3">
           <p class="font-['poppins'] text-5xl xl:text-7xl  leading-14 xl:leading-28;">Gruppo</p>
           <p class="text-megat text-shadow-lg/20">DemoBar 66</p>
+          <p class="text-desc pt-2.5">Il <b>gruppo</b> DemoBar 66 nasce per offrire un'esperienza gastronomica <b>unica</b>, combinando <b>tradizione</b> e <b>innovazione</b>.
+            Ci impegniamo a creare un'<b>atmosfera accogliente</b> e <b>raffinata</b>, dove ogni dettaglio conta.
+            Scopri i nostri locali e lasciati conquistare. <b>Enjoy</b></p>
       </div>
     </section>
 
     <!-- ===================================================== -->
     <!-- SEZIONE CARD LOCALI                                   -->
     <!-- ===================================================== -->
-    <section id="DemoBarBistro" class="padding-px grid grid-cols-1 gap-6 xl:gap-10 text-white bg-amber-50 padding-px padding-py">
+    <section id="DemoBarBistro" class="padding-px grid grid-cols-1 gap-6 xl:gap-10 bg-amber-50 padding-px padding-py">
         <div
           v-for="card in cards"
           :key="card.label"
@@ -32,11 +37,11 @@
             :alt="card.alt"
             class="w-auto h-56 object-contain mx-auto z-20"
           />
-            <div class="z-10 ellipse absolute inset-0"></div>
+            <!--<div class="z-10 ellipse absolute inset-0"></div>-->
           <div class="p-4 flex flex-col items-center gap-4">
             <UButton
               :to="card.link"
-              class="bg-amber-300 text-black rounded-2xl px-4 py-2 hover:bg-amber-400 z-20"
+              class="bg-amber-300 text-shadow-gray-700 text-btn rounded-lg px-4 py-2 hover:bg-amber-400 z-20"
             >
               Scopri il locale
             </UButton>
@@ -115,25 +120,25 @@ interface CardData {
 const cards: CardData[] = [
   {
     label: 'Bistrò',
-    src: '/img/home/BlockBistroMob.png',
+    src: '/img/home/block/BlockBistroMob.png',
     alt: 'Bistrò',
-    base: 'bg-[url(/img/home/bistro.png)] bg-cover bg-center',
+    base: 'bg-[url(/img/home/block/Bistro.png)] bg-cover bg-center',
     hover: 'hover:bg-emerald-900',
     link: '/demo77-bistro'
   },
   {
     label: 'Beach',
-    src: '/img/home/BlockBeachMob.png',
+    src: '/img/home/block/BlockBeachMob.png',
     alt: 'Beach',
-    base: 'bg-[url(/img/home/beach.png)] bg-cover bg-center',
+    base: 'bg-[url(/img/home/block/Beach.png)] bg-cover bg-center',
     hover: 'hover:bg-fuchsia-900',
     link: '/demo77-beach'
   },
   {
     label: 'Bay',
-    src: '/img/home/BlockBayMob.png',
+    src: '/img/home/block/BlockBayMob.png',
     alt: 'Bay',
-    base: 'bg-[url(/img/home/bay.png)] bg-cover bg-center',
+    base: 'bg-[url(/img/home/block/Bay.png)] bg-cover bg-center',
     hover: 'hover:bg-rose-950',
     link: '/demo77-bay'
   }

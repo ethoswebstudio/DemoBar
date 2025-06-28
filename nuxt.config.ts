@@ -4,7 +4,7 @@ import { defineNuxtConfig } from "nuxt/config";
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
 
-  // 1.  Moduli senza duplicati
+  // 1.  Moduli senza duplicati , '@nuxtjs/supabase'
   modules: ['@nuxt/ui', '@nuxt/icon', '@nuxt/image'],
 
   // 2.  CSS: un solo entry-point (raggruppa theme e utility in main.css)
