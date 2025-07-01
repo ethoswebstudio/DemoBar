@@ -20,6 +20,9 @@
   .padding-py {
     @apply py-12 sm:py-16 lg:py-24 xl:py-20;
   }
+  .padding-landing {
+    @apply pt-24 pb-12 sm:pt-24 sm:pb-16 lg:pt-32 lg:pb-24 xl:pt-40 xl:pb-20;
+  }
 }
 
 .text-megat {

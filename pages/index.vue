@@ -6,17 +6,17 @@
     <!-- ===================================================== -->
     <section
       id="Landing"
-      class="relative isolate flex flex-col lg:flex-row items-center justify-center padding-px padding-py
+      class="relative isolate flex flex-col lg:flex-row items-center justify-center padding-px padding-landing
         bg-[url('/img/home/landingMob.png')]
         xl:bg-[url('/img/home/landingDsk.png')] 
         bg-no-repeat bg-cover bg-center"
     >
-      <div class="text-center space-y-3">
+      <div class="text-center space-y-3 text-gray-700">
           <p class="font-['poppins'] text-5xl xl:text-7xl  leading-14 xl:leading-28;">Gruppo</p>
           <p class="text-megat text-shadow-lg/20">DemoBar 66</p>
-          <p class="text-desc pt-2.5">Il <b>gruppo</b> DemoBar 66 nasce per offrire un'esperienza gastronomica <b>unica</b>, combinando <b>tradizione</b> e <b>innovazione</b>.
-            Ci impegniamo a creare un'<b>atmosfera accogliente</b> e <b>raffinata</b>, dove ogni dettaglio conta.
-            Scopri i nostri locali e lasciati conquistare. <b>Enjoy</b></p>
+          <p class="text-desc pt-2.5">
+            Il gruppo DemoBar 66 nasce per offrire un’esperienza gastronomica unica, combinando eleganza, gusto e atmosfera in tre ambienti distinti ma complementari: il Bistrò raffinato, il Beach vista mare e il Bay per chi ama l’aperitivo perfetto.
+            Scopri il tuo preferito. Enjoy.</p>
       </div>
     </section>
 
@@ -151,6 +151,15 @@ const partnerLogos = [
   '/img/partners/EthosPartner.png',
   '/img/partners/EthosPartner.png',
 ]
+
+/* Meta per la generazione della navbar */
+definePageMeta({
+  navItems: [
+    { label: 'I locali', href: '#DemoBarBistro' },
+    { label: 'Dove siamo', href: '#Map' },
+    { label: 'Contatti', href: '#footer' }
+  ]
+})
 </script>
 
 <style scoped>

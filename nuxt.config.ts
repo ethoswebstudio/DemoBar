@@ -19,6 +19,7 @@ export default defineNuxtConfig({
     }
   },
     app: {
+    baseURL: '/',
     pageTransition: { name: 'fade-slide', mode: 'out-in' }
   }
 })

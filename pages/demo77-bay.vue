@@ -1,109 +1,135 @@
 <template>
-  <main
-  id="bistro"
-  class="relative bg-white">
-    <!-- =============================================================== -->
-    <!-- LANDING / HERO                                                 -->
-    <!-- =============================================================== -->
-  <div 
-  id="landing"
-  class="relative isolate flex flex-col lg:flex-row justify-center padding-px padding-py">
-    <div class="text-shadow-lg/20 text-megat text-center  text-gray-800">
-        <p>DemoBar</p>
-        <p>66</p>
-    </div>
-    </div>
+  <main id="bay" class="relative bg-white">
 
     <!-- =============================================================== -->
-    <!-- Menù-->
+    <!-- HERO / LANDING                                                  -->
     <!-- =============================================================== -->
-
-    <div 
-    id="Menu"
-    class="text-black bg-amber-50 flex-col padding-px padding-py relative items-center">
-        <div class="relative flex-col justify-center">
-            <h2 class="text-title">
-            Cosa possiamo offrirti?
-            </h2>
-            <p class="text-desc pt-5">
-            Scopri il nostro menù, una selezione di piatti preparati con ingredienti freschi e di alta qualità.
-            Ogni piatto è una celebrazione dei sapori, pensato per soddisfare ogni palato.
-            </p>
-        </div>
-            <div id="menuOption"
-            class=" py-5 xl:py-10">
-            <div
-                class="bg-emerald-800 text-btn rounded-2xl py-3 xl:py-10 shadow-lg
-                    transition transform duration-300 ease-out
-                    hover:scale-105 hover:bg-emerald-900"
-                >
-                Menù
-            </div>
-
-            <div
-                class="bg-fuchsia-800 text-btn rounded-2xl py-3 xl:py-10 shadow-lg
-                    transition transform duration-300 ease-out
-                    hover:scale-105 hover:bg-fuchsia-900"
-                >
-                Drink
-            </div>
-
-            <div
-                class="bg-rose-900 text-btn rounded-2xl py-3 xl:py-10 shadow-lg col-span-2
-                    transition transform duration-300 ease-out
-                    hover:scale-105 hover:bg-rose-950"
-             >
-                Carta dei Vini
-            </div>
-        </div>
-    </div>
+    <section
+      id="Landing"
+      class="relative isolate flex flex-col lg:flex-row justify-center
+             bg-[url('/img/bay/landingBay.jpg')] bg-cover bg-center bg-no-repeat
+             text-white padding-px padding-landing"
+    >
+      <div class="text-center space-y-2">
+        <p class="text-megat text-shadow-lg/20 leading-none">DemoBar</p>
+        <p class="text-megat">66</p>
+        <p class="text-title">Relax Bay</p>
+      </div>
+    </section>
 
     <!-- =============================================================== -->
-    <!-- Chi Siamo  -->
+    <!-- IL BAR                                                           -->
     <!-- =============================================================== -->
-    <div 
-    id="ChiSiamo"
-    class="text-black flex flex-col lg:flex-row padding-px padding-py relative gap-12">
-        <div class="relative flex-1 flex flex-col justify-center gap-4">
-            <h2 class="text-title">
-            Chi siamo
-            </h2>
-            <p class="text-desc">
-            Boma77 nasce per regalare un’esperienza unica.
-            Ogni dettaglio è curato con precisione per farti vivere momenti perfetti circondato dalle persone che preferisci.
-            Cibo preparato con materie prime selezionate, carta vini studiata per esaltare anche i palati più esigenti e cocktail preparati da mani esperte con minuziosità.
-            </p>
-        </div>
-        <div class="relative flex-1 max-w-md mx-auto lg:mx-0">
-            <NuxtImg src="/img/carousel/BarImg.png" 
-                 alt="img1"
-                 class="shadow-xl/30 rounded-2xl"
-            />
-        </div> 
-    </div>
+    <section
+      id="IlBar"
+      class="bg-blue-50 text-gray-700 flex flex-col lg:flex-row gap-12
+             padding-px padding-py"
+    >
+      <div class="flex-1 flex flex-col justify-center gap-4">
+        <h2 class="text-title">Non solo un drink, un rituale</h2>
+        <p class="text-desc">
+          Ogni cocktail nasce da una ricetta calibrata al millilitro, da
+          ingredienti selezionati e da mani esperte.⠀Che tu preferisca i grandi
+          classici o le creazioni originali del nostro mixologist, al Bay trovi
+          sempre il bicchiere giusto per il tuo mood.
+        </p>
+      </div>
+
+      <div class="flex-1 max-w-md mx-auto lg:mx-0">
+        <NuxtImg
+          src="/img/beach/drinkBeach.png"
+          alt="Cocktail DemoBar 66 Bay"
+          class="shadow-xl/30 rounded-2xl"
+        />
+      </div>
+    </section>
 
     <!-- =============================================================== -->
-    <!-- Bistrò --> 
+    <!-- CICCHETTI & STUZZICHINI                                         -->
     <!-- =============================================================== -->
+    <section
+      id="Snack"
+      class="bg-amber-50 text-gray-700 flex flex-col lg:flex-row-reverse gap-12
+             padding-px padding-py"
+    >
+      <div class="flex-1 flex flex-col justify-center gap-4">
+        <h2 class="text-title">Condividi, gusta, rilassati</h2>
+        <p class="text-desc">
+          Ogni drink è accompagnato da proposte sfiziose: taglieri di salumi
+          gourmet, cicchetti creativi, mini-panini lievitati in casa, fritti
+          croccanti ma leggeri. Ideali per un aperitivo lungo o una cena easy
+          tra amici senza rinunciare alla qualità.
+        </p>
+      </div>
 
-    <div 
-    id="Bistro"
-    class="text-black bg-amber-50 flex flex-col lg:flex-row padding-px padding-py relative gap-12">
-        <div class="relative flex-1 flex flex-col justify-center gap-4">
-            <h2 class="text-title">
-            Il Bistrò
-            </h2>
-            <p class="text-desc">
-            Piatti che trasmettono l'autenticità e la passione del nostro Bistrò. <br>
-            Il cibo è il nostro amore e ogni giorno vogliamo accompagnarti in un viaggio culinario con un menù di stagione che varia utilizzando materie prime fresche e salutari.
-            </p>
-        </div>
-        <div class="relative flex-1 max-w-md mx-auto lg:mx-0">
-            <Carousel />
-        </div>
-    </div>
-   
+      <div class="flex-1 max-w-md mx-auto lg:mx-0">
+        <NuxtImg
+          src="/img/beach/mealBeach.png"
+          alt="Stuzzichini DemoBar 66 Bay"
+          class="shadow-xl/30 rounded-2xl"
+        />
+      </div>
+    </section>
 
+    <!-- =============================================================== -->
+    <!-- GALLERY / CAROUSEL                                              -->
+    <!-- =============================================================== -->
+    <section
+      id="Gallery"
+      class="bg-blue-200 text-gray-700 flex flex-col lg:flex-row gap-12
+             padding-px padding-py"
+    >
+      <div class="flex-1 max-w-md mx-auto lg:mx-0">
+        <Carousel />
+      </div>
+      <div class="flex-1 flex flex-col justify-center gap-4">
+        <h2 class="text-title">Drink vista tramonto</h2>
+        <p class="text-desc">
+          Spritz d’autore, bollicine italiane, signature cocktail speziati.
+          Lasciati tentare dal nostro bartender e gusta il tuo drink
+          preferito mentre il sole cala sull’orizzonte: semplicemente
+          indimenticabile.
+        </p>
+      </div>
+    </section>
+
+    <!-- =============================================================== -->
+    <!-- EVENTI & SERATE                                                 -->
+    <!-- =============================================================== -->
+    <section
+      id="Eventi"
+      class="bg-white text-gray-700 flex flex-col lg:flex-row-reverse gap-12
+             padding-px padding-py"
+    >
+      <div class="flex-1 flex flex-col justify-center gap-4">
+        <h2 class="text-title">C’è sempre un buon motivo per tornare</h2>
+        <p class="text-desc">
+          DJ-set nel weekend, quiz-night del mercoledì, karaoke del giovedì e
+          feste private su richiesta. Al Bay succede sempre qualcosa: resta
+          aggiornato sui nostri social e vivi ogni volta un’esperienza diversa.
+        </p>
+      </div>
+
+      <div class="flex-1 max-w-md mx-auto lg:mx-0">
+        <NuxtImg
+          src="/img/beach/mealBeach.png"
+          alt="Eventi DemoBar 66 Bay"
+          class="shadow-xl/30 rounded-2xl"
+        />
+      </div>
+    </section>
 
   </main>
 </template>
+
+<script setup>
+definePageMeta({
+  navItems: [
+    { label: 'Il bar',            href: '#IlBar'   },
+    { label: 'Snack',             href: '#Snack'   },
+    { label: 'Gallery',           href: '#Gallery' },
+    { label: 'Eventi',            href: '#Eventi'  },
+    { label: 'Torna al gruppo',   href: '/'        }
+  ]
+})
+</script>

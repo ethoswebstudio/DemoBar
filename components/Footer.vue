@@ -46,8 +46,8 @@
       <div class="space-y-4 flex flex-col items-center">
         <h3 class="text-subt text-gray-800">Documenti</h3>
         <ul class="text-sm space-y-2">
-          <li><ULink to="/privacy" class="hover:text-amber-400">Privacy Policy</ULink></li>
-          <li><ULink to="/cookies" class="hover:text-amber-400">Cookie Policy</ULink></li>
+          <li><ULink to="/" class="hover:text-amber-400">Privacy Policy</ULink></li>
+          <li><ULink to="/" class="hover:text-amber-400">Cookie Policy</ULink></li>
         </ul>
       </div>
     </div>
